@@ -1,0 +1,9 @@
+Pods/
+*.xcworkspace/xcuserdata/
+DerivedData/
+__pycache__/
+TestResults/
+.omx/
+*.xcodeproj/xcuserdata/
+*.xcuserstate
+.DS_Store

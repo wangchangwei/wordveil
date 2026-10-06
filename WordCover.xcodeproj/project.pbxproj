@@ -1,0 +1,875 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		009081D38DE2C1AAEF4C6953 /* StudyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C735102B2EBDE4EA24657 /* StudyView.swift */; };
+		064ACAC87C87C81C0AFABCD6 /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A438DD18EF9B9C31FF38D6EB /* OCRService.swift */; };
+		0A6F27AC9DC6B71FFE9B8D96 /* DBPostProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA5DB7E14E837714CC55531 /* DBPostProcess.swift */; };
+		0E35920846D17E47C6F81087 /* BoxSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99559545469D69ACCD37471D /* BoxSorter.swift */; };
+		0EEE82D209DA849AF3F5F947 /* Licenses in Resources */ = {isa = PBXBuildFile; fileRef = E83A79ED8DF6C8B6E01D927D /* Licenses */; };
+		D64C5A381B1A22374CC0273C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16E5ECC5CCFCFD3689170F5D /* Assets.xcassets */; };
+		121CA2770610511627C9BA49 /* OpenCVImageBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = D86FFF01D6D7F55F025CF5C7 /* OpenCVImageBridge.mm */; };
+		161F76B26F96C87CDD2517F8 /* InferenceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414AA656421C14F55FABAA57 /* InferenceConfig.swift */; };
+		16B5614FFDE9F937FC8562F2 /* DetectionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19E9D0A9810D2A54A51BBE1 /* DetectionEngine.swift */; };
+		1AB6472CE23D1D7F40C14B99 /* MaskHitArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF101DF49299C868D6BD48D /* MaskHitArea.swift */; };
+		23C295440BB6C924B03EABF9 /* MaskCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D57DBED1DA0B553FC6EA79B /* MaskCanvas.swift */; };
+		281BE5E010096A72500D9027 /* TextSegmentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13953FCA216D5DBF12E5F002 /* TextSegmentation.swift */; };
+		362427BE3A7558EDA41B46BC /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A45A5A376760A0B43DAC59 /* EditorView.swift */; };
+		3A31AB00D524AE3AC6649FC2 /* ORTSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5C3B60B0570CD63CDD02C9 /* ORTSessionManager.swift */; };
+		476515B17855F6E609166AFC /* OCREngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F84BEC316A52834DAC76BD6 /* OCREngine.swift */; };
+		4BFCEE34878FEAA3A66D7EC8 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB4B7B0E1EEC306EE994DF /* AppTheme.swift */; };
+		4F950A9363383551C4CE1083 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2D1FA4FB70AA5049DD24FA3 /* InfoPlist.strings */; };
+		55DBC330C3CA8CB600971E38 /* WordCoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C22AA411EBDFE3F2B85BAFB /* WordCoverTests.swift */; };
+		56BC80ED93998D6E781477A2 /* ORTProfilingBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 19B1AB31475B19191ADBD5A8 /* ORTProfilingBridge.mm */; };
+		581441920B449DD38392C35C /* CTCDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F81783A18849CB9981AD61 /* CTCDecoder.swift */; };
+		595C539D7EF9FEB8D5699E0A /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9DEE9801C7F9AA4E062A08 /* CameraPicker.swift */; };
+		6594602794893F7E32EB472A /* QuadTextCrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D74666D76DEBD6396F7A0 /* QuadTextCrop.swift */; };
+		67E78FAEA037411507E7BD4A /* Preprocessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8B973C6D395C7B44684D37 /* Preprocessing.swift */; };
+		720F57C249A3DC6EA61B3210 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = A4E14C363BFD95345D2CC2CC /* Models */; };
+		7520CFFA335C9C5BC0D1C008 /* WordCoverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA8884ABDDF9A6EC6ADA4A /* WordCoverApp.swift */; };
+		793055FD506397E3215312F1 /* clipper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 461D0622955C440D116E3F9C /* clipper.cpp */; };
+		7A93426C29A9B6D87844A3E9 /* PDFPagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC0933935BDF0DCB9A4514 /* PDFPagePicker.swift */; };
+		81FEBBEB68E8FAA377A5F496 /* RecognitionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DACAA59F653F147F91629F /* RecognitionEngine.swift */; };
+		85BD75283D4FFC8A98F5A956 /* ModelConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7755C1055B156F59B4D419B /* ModelConfig.swift */; };
+		88E548E589CA47D9D6E41B1D /* WordGapLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938D8902B5757521927A05C5 /* WordGapLocator.swift */; };
+		8AEBCF4BCB5DA0ED42DD04EC /* RecPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EE3A3F74AA8FB6ACD0CA53 /* RecPreprocessor.swift */; };
+		8EC450A490AE43B6ABBD6951 /* Pods_WordCoverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F272408D9D76E9818A0E0E6 /* Pods_WordCoverTests.framework */; };
+		8FB0137395A4F9CC6202A74D /* WordCoverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50881A9405182241F3E40458 /* WordCoverUITests.swift */; };
+		9987B9FB0345FBD98431E82E /* OpenCVDBBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 207D4B9D3A2F8A6B886185F9 /* OpenCVDBBridge.mm */; };
+		B1AE489059A7183107A9C7D6 /* OCRParameterResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C271E9945791722C4D58179C /* OCRParameterResolver.swift */; };
+		B80A3AFE6F58480D6E919727 /* Pods_WordCover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE21F588F13658F312D4287 /* Pods_WordCover.framework */; };
+		BEE0F0B02DF3B38A603174AD /* EncodedImageCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FCBC3EC82969AB83687BA4 /* EncodedImageCodec.swift */; };
+		C04A80DD7CCC3F82E0CC3A2D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A96ABC2A13CE1FF61F64660 /* HomeView.swift */; };
+		CF631FC10F15DA31ADE0DBE7 /* PDBPolygonOffsetBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04004E239072111673BE0D89 /* PDBPolygonOffsetBridge.mm */; };
+		D1E75B2B0D1E32F3ACDE55B7 /* Fixtures in Resources */ = {isa = PBXBuildFile; fileRef = 767BBC27D971207147FF7634 /* Fixtures */; };
+		D4D7CF36B66B427B0B2EB318 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF8204A8C648573CB0C2901 /* Models.swift */; };
+		D9409B8E519B5AFE0AC8351D /* FileImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5465CCDC32E562B179544B /* FileImport.swift */; };
+		E4A9DB569DD2F49CF30A07BB /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6EA4772CB2F91B5C18DED4 /* AppLanguage.swift */; };
+		EA9C6602DF3F0A49917E6709 /* OpenCV in Frameworks */ = {isa = PBXBuildFile; productRef = 150E32A9B1587E45D75F3E2D /* OpenCV */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17A6010BAC6406EDAAA10F1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 752D07FAB5C1E51A21CCF4F8 /* Pods.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CCA778C21CDDB6ACE502068F027434C;
+			remoteInfo = "Pods-WordCoverTests";
+		};
+		1857D669A1D48FA4AAC5D7C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 752D07FAB5C1E51A21CCF4F8 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 20DB23FD5DE332441A0095AA0C0FB1BA;
+			remoteInfo = Subproject;
+		};
+		1C42E21D1015C2F9C15A0F4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 752D07FAB5C1E51A21CCF4F8 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 70F59C930AD0731E2261B0B677058D5B;
+			remoteInfo = Subproject;
+		};
+		34E10273E28E709D0859AFF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 752D07FAB5C1E51A21CCF4F8 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AF44BE896BEBBE099592D03904279C1C;
+			remoteInfo = Subproject;
+		};
+		4517297F88778A2FF907FACA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29C7B681C8D62CBAC94D51C0;
+			remoteInfo = WordCover;
+		};
+		5D93A1BCC9D505296C299A96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29C7B681C8D62CBAC94D51C0;
+			remoteInfo = WordCover;
+		};
+		66226DB8D6E31796C05FD941 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 752D07FAB5C1E51A21CCF4F8 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BFA79CC3090548197F276DAFA5644E28;
+			remoteInfo = Subproject;
+		};
+		C3B57E6A80EA2490CAF63FA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 752D07FAB5C1E51A21CCF4F8 /* Pods.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F5FF2AB583A25DE75E15CEE4995241E;
+			remoteInfo = "Pods-WordCover";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04004E239072111673BE0D89 /* PDBPolygonOffsetBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = PDBPolygonOffsetBridge.mm; path = OCR/PaddleOCR/Engine/PDBPolygonOffsetBridge.mm; sourceTree = SOURCE_ROOT; };
+		0D3D74666D76DEBD6396F7A0 /* QuadTextCrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuadTextCrop.swift; path = OCR/PaddleOCR/Engine/QuadTextCrop.swift; sourceTree = SOURCE_ROOT; };
+		0EEA8884ABDDF9A6EC6ADA4A /* WordCoverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WordCoverApp.swift; path = WordCover/WordCoverApp.swift; sourceTree = SOURCE_ROOT; };
+		13953FCA216D5DBF12E5F002 /* TextSegmentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextSegmentation.swift; path = WordCover/TextSegmentation.swift; sourceTree = SOURCE_ROOT; };
+		15EE3A3F74AA8FB6ACD0CA53 /* RecPreprocessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecPreprocessor.swift; path = OCR/PaddleOCR/Engine/RecPreprocessor.swift; sourceTree = SOURCE_ROOT; };
+		17F9DFCA6B7A70E019AA25F2 /* WordCoverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordCoverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B1AB31475B19191ADBD5A8 /* ORTProfilingBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = ORTProfilingBridge.mm; path = OCR/PaddleOCR/Engine/ORTProfilingBridge.mm; sourceTree = SOURCE_ROOT; };
+		1D57DBED1DA0B553FC6EA79B /* MaskCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MaskCanvas.swift; path = WordCover/MaskCanvas.swift; sourceTree = SOURCE_ROOT; };
+		1F6EA4772CB2F91B5C18DED4 /* AppLanguage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppLanguage.swift; path = WordCover/AppLanguage.swift; sourceTree = SOURCE_ROOT; };
+		207D4B9D3A2F8A6B886185F9 /* OpenCVDBBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = OpenCVDBBridge.mm; path = OCR/PaddleOCR/Engine/OpenCVDBBridge.mm; sourceTree = SOURCE_ROOT; };
+		26F39A15BC0F8515AD3E41AB /* WordCoverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordCoverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A96ABC2A13CE1FF61F64660 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = WordCover/HomeView.swift; sourceTree = SOURCE_ROOT; };
+		3F272408D9D76E9818A0E0E6 /* Pods_WordCoverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordCoverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		414AA656421C14F55FABAA57 /* InferenceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InferenceConfig.swift; path = OCR/PaddleOCR/Engine/InferenceConfig.swift; sourceTree = SOURCE_ROOT; };
+		45055622539301D5C99D523D /* OpenCVDBBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OpenCVDBBridge.h; path = OCR/PaddleOCR/Engine/OpenCVDBBridge.h; sourceTree = SOURCE_ROOT; };
+		461D0622955C440D116E3F9C /* clipper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = clipper.cpp; path = OCR/PaddleOCR/ThirdParty/Clipper1/clipper.cpp; sourceTree = SOURCE_ROOT; };
+		4FEB4B7B0E1EEC306EE994DF /* AppTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppTheme.swift; path = WordCover/AppTheme.swift; sourceTree = SOURCE_ROOT; };
+		50881A9405182241F3E40458 /* WordCoverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests/WordCoverUITests.swift; sourceTree = SOURCE_ROOT; };
+		60FC67FA44F338F47AB60D53 /* Pods-WordCoverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCoverTests.debug.xcconfig"; path = "Target Support Files/Pods-WordCoverTests/Pods-WordCoverTests.debug.xcconfig"; sourceTree = "<group>"; };
+		691E2A99D4468FC0EB0E7A49 /* Pods-WordCover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCover.release.xcconfig"; path = "Target Support Files/Pods-WordCover/Pods-WordCover.release.xcconfig"; sourceTree = "<group>"; };
+		6B8B973C6D395C7B44684D37 /* Preprocessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Preprocessing.swift; path = OCR/PaddleOCR/Engine/Preprocessing.swift; sourceTree = SOURCE_ROOT; };
+		6F84BEC316A52834DAC76BD6 /* OCREngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OCREngine.swift; path = OCR/PaddleOCR/Engine/OCREngine.swift; sourceTree = SOURCE_ROOT; };
+		6FA5DB7E14E837714CC55531 /* DBPostProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DBPostProcess.swift; path = OCR/PaddleOCR/Engine/DBPostProcess.swift; sourceTree = SOURCE_ROOT; };
+		74DC0933935BDF0DCB9A4514 /* PDFPagePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFPagePicker.swift; path = WordCover/PDFPagePicker.swift; sourceTree = SOURCE_ROOT; };
+		752D07FAB5C1E51A21CCF4F8 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		767BBC27D971207147FF7634 /* Fixtures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fixtures; path = Tests/Fixtures; sourceTree = SOURCE_ROOT; };
+		838C735102B2EBDE4EA24657 /* StudyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StudyView.swift; path = WordCover/StudyView.swift; sourceTree = SOURCE_ROOT; };
+		887D0879B523152FB9BB7DB9 /* zh-Hans */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "WordCover/zh-Hans.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
+		8D6270F5129158085094CE5C /* en */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = en; path = WordCover/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		938D8902B5757521927A05C5 /* WordGapLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WordGapLocator.swift; path = WordCover/WordGapLocator.swift; sourceTree = SOURCE_ROOT; };
+		99559545469D69ACCD37471D /* BoxSorter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoxSorter.swift; path = OCR/PaddleOCR/Engine/BoxSorter.swift; sourceTree = SOURCE_ROOT; };
+		9AF101DF49299C868D6BD48D /* MaskHitArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MaskHitArea.swift; path = WordCover/MaskHitArea.swift; sourceTree = SOURCE_ROOT; };
+		9B9DEE9801C7F9AA4E062A08 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CameraPicker.swift; path = WordCover/CameraPicker.swift; sourceTree = SOURCE_ROOT; };
+		9C22AA411EBDFE3F2B85BAFB /* WordCoverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests/WordCoverTests.swift; sourceTree = SOURCE_ROOT; };
+		9D107A8E6B8703D2B43D8307 /* WordCover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordCover.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A438DD18EF9B9C31FF38D6EB /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OCRService.swift; path = OCR/OCRService.swift; sourceTree = SOURCE_ROOT; };
+		A4E14C363BFD95345D2CC2CC /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Models; path = OCR/Models; sourceTree = SOURCE_ROOT; };
+		ADF8204A8C648573CB0C2901 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Models.swift; path = WordCover/Models.swift; sourceTree = SOURCE_ROOT; };
+		AE5465CCDC32E562B179544B /* FileImport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileImport.swift; path = WordCover/FileImport.swift; sourceTree = SOURCE_ROOT; };
+		B17C87747A5090BB68FD3257 /* PDBPolygonOffsetBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PDBPolygonOffsetBridge.h; path = OCR/PaddleOCR/Engine/PDBPolygonOffsetBridge.h; sourceTree = SOURCE_ROOT; };
+		B19E9D0A9810D2A54A51BBE1 /* DetectionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetectionEngine.swift; path = OCR/PaddleOCR/Engine/DetectionEngine.swift; sourceTree = SOURCE_ROOT; };
+		B4F81783A18849CB9981AD61 /* CTCDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CTCDecoder.swift; path = OCR/PaddleOCR/Engine/CTCDecoder.swift; sourceTree = SOURCE_ROOT; };
+		C01E9DD08639120080FE5643 /* ORTProfilingBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ORTProfilingBridge.h; path = OCR/PaddleOCR/Engine/ORTProfilingBridge.h; sourceTree = SOURCE_ROOT; };
+		C271E9945791722C4D58179C /* OCRParameterResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OCRParameterResolver.swift; path = OCR/PaddleOCR/Engine/OCRParameterResolver.swift; sourceTree = SOURCE_ROOT; };
+		C7755C1055B156F59B4D419B /* ModelConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModelConfig.swift; path = OCR/PaddleOCR/Engine/ModelConfig.swift; sourceTree = SOURCE_ROOT; };
+		C9DACAA59F653F147F91629F /* RecognitionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecognitionEngine.swift; path = OCR/PaddleOCR/Engine/RecognitionEngine.swift; sourceTree = SOURCE_ROOT; };
+		CD5C3B60B0570CD63CDD02C9 /* ORTSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ORTSessionManager.swift; path = OCR/PaddleOCR/Engine/ORTSessionManager.swift; sourceTree = SOURCE_ROOT; };
+		D4A45A5A376760A0B43DAC59 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditorView.swift; path = WordCover/EditorView.swift; sourceTree = SOURCE_ROOT; };
+		D7FCBC3EC82969AB83687BA4 /* EncodedImageCodec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EncodedImageCodec.swift; path = OCR/PaddleOCR/Engine/EncodedImageCodec.swift; sourceTree = SOURCE_ROOT; };
+		D86FFF01D6D7F55F025CF5C7 /* OpenCVImageBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = OpenCVImageBridge.mm; path = OCR/PaddleOCR/Engine/OpenCVImageBridge.mm; sourceTree = SOURCE_ROOT; };
+		DB269708480E4D167497F5F8 /* Pods-WordCoverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCoverTests.release.xcconfig"; path = "Target Support Files/Pods-WordCoverTests/Pods-WordCoverTests.release.xcconfig"; sourceTree = "<group>"; };
+		E83A79ED8DF6C8B6E01D927D /* Licenses */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Licenses; path = OCR/Licenses; sourceTree = SOURCE_ROOT; };
+		E961903A04515F313F1B869E /* Pods-WordCover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCover.debug.xcconfig"; path = "Target Support Files/Pods-WordCover/Pods-WordCover.debug.xcconfig"; sourceTree = "<group>"; };
+		E988ED9DEC24634DBA3FC5B3 /* OCR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "OCR-Bridging-Header.h"; path = "OCR/OCR-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		F796B985B574FE56A72F3F71 /* OpenCVImageBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OpenCVImageBridge.h; path = OCR/PaddleOCR/Engine/OpenCVImageBridge.h; sourceTree = SOURCE_ROOT; };
+		F9686EA1AEC334DF1D8C3249 /* clipper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = clipper.hpp; path = OCR/PaddleOCR/ThirdParty/Clipper1/clipper.hpp; sourceTree = SOURCE_ROOT; };
+		FBE21F588F13658F312D4287 /* Pods_WordCover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordCover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16E5ECC5CCFCFD3689170F5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Branding/Wordveil/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33081AA06F74F343E6B9C036 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EC450A490AE43B6ABBD6951 /* Pods_WordCoverTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D3528B6F4378F7D315D151E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF5BDB0BEAFE176F9629192A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA9C6602DF3F0A49917E6709 /* OpenCV in Frameworks */,
+				B80A3AFE6F58480D6E919727 /* Pods_WordCover.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00C45FD35CB0F9C5F764F070 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D107A8E6B8703D2B43D8307 /* WordCover.app */,
+				17F9DFCA6B7A70E019AA25F2 /* WordCoverTests.xctest */,
+				26F39A15BC0F8515AD3E41AB /* WordCoverUITests.xctest */,
+				2893109C52A90D38A03A082E /* onnxruntime_objc.framework */,
+				613438B1D667435DF380E7AF /* Pods_WordCover.framework */,
+				5093CE704F35E7E75F523E55 /* Pods_WordCoverTests.framework */,
+				EC77568F38F6DF0DDB26AB47 /* Yams.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		491CD1E62B29D9B42FB5570C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBE21F588F13658F312D4287 /* Pods_WordCover.framework */,
+				3F272408D9D76E9818A0E0E6 /* Pods_WordCoverTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CBEE24908066957469B0B6A /* OCR */ = {
+			isa = PBXGroup;
+			children = (
+				A438DD18EF9B9C31FF38D6EB /* OCRService.swift */,
+				99559545469D69ACCD37471D /* BoxSorter.swift */,
+				B4F81783A18849CB9981AD61 /* CTCDecoder.swift */,
+				6FA5DB7E14E837714CC55531 /* DBPostProcess.swift */,
+				B19E9D0A9810D2A54A51BBE1 /* DetectionEngine.swift */,
+				D7FCBC3EC82969AB83687BA4 /* EncodedImageCodec.swift */,
+				414AA656421C14F55FABAA57 /* InferenceConfig.swift */,
+				C7755C1055B156F59B4D419B /* ModelConfig.swift */,
+				6F84BEC316A52834DAC76BD6 /* OCREngine.swift */,
+				C271E9945791722C4D58179C /* OCRParameterResolver.swift */,
+				19B1AB31475B19191ADBD5A8 /* ORTProfilingBridge.mm */,
+				CD5C3B60B0570CD63CDD02C9 /* ORTSessionManager.swift */,
+				207D4B9D3A2F8A6B886185F9 /* OpenCVDBBridge.mm */,
+				D86FFF01D6D7F55F025CF5C7 /* OpenCVImageBridge.mm */,
+				04004E239072111673BE0D89 /* PDBPolygonOffsetBridge.mm */,
+				6B8B973C6D395C7B44684D37 /* Preprocessing.swift */,
+				0D3D74666D76DEBD6396F7A0 /* QuadTextCrop.swift */,
+				15EE3A3F74AA8FB6ACD0CA53 /* RecPreprocessor.swift */,
+				C9DACAA59F653F147F91629F /* RecognitionEngine.swift */,
+				461D0622955C440D116E3F9C /* clipper.cpp */,
+				E988ED9DEC24634DBA3FC5B3 /* OCR-Bridging-Header.h */,
+				C01E9DD08639120080FE5643 /* ORTProfilingBridge.h */,
+				45055622539301D5C99D523D /* OpenCVDBBridge.h */,
+				F796B985B574FE56A72F3F71 /* OpenCVImageBridge.h */,
+				B17C87747A5090BB68FD3257 /* PDBPolygonOffsetBridge.h */,
+				F9686EA1AEC334DF1D8C3249 /* clipper.hpp */,
+				A4E14C363BFD95345D2CC2CC /* Models */,
+				E83A79ED8DF6C8B6E01D927D /* Licenses */,
+			);
+			name = OCR;
+			sourceTree = "<group>";
+		};
+		ADCF10F76EBF2A74473E9DC4 = {
+			isa = PBXGroup;
+			children = (
+				CF8D0BD4B75E8C2C174692A5 /* WordCover */,
+				8CBEE24908066957469B0B6A /* OCR */,
+				EEFE21A1443933CA4DE017DA /* Tests */,
+				00C45FD35CB0F9C5F764F070 /* Products */,
+				EF52AAE8213261D9019E2BC5 /* Pods */,
+				491CD1E62B29D9B42FB5570C /* Frameworks */,
+				752D07FAB5C1E51A21CCF4F8 /* Pods.xcodeproj */,
+				16E5ECC5CCFCFD3689170F5D /* Assets.xcassets */,
+			);
+			sourceTree = "<group>";
+		};
+		CF8D0BD4B75E8C2C174692A5 /* WordCover */ = {
+			isa = PBXGroup;
+			children = (
+				9B9DEE9801C7F9AA4E062A08 /* CameraPicker.swift */,
+				D4A45A5A376760A0B43DAC59 /* EditorView.swift */,
+				2A96ABC2A13CE1FF61F64660 /* HomeView.swift */,
+				1D57DBED1DA0B553FC6EA79B /* MaskCanvas.swift */,
+				9AF101DF49299C868D6BD48D /* MaskHitArea.swift */,
+				ADF8204A8C648573CB0C2901 /* Models.swift */,
+				838C735102B2EBDE4EA24657 /* StudyView.swift */,
+				13953FCA216D5DBF12E5F002 /* TextSegmentation.swift */,
+				0EEA8884ABDDF9A6EC6ADA4A /* WordCoverApp.swift */,
+				938D8902B5757521927A05C5 /* WordGapLocator.swift */,
+				AE5465CCDC32E562B179544B /* FileImport.swift */,
+				74DC0933935BDF0DCB9A4514 /* PDFPagePicker.swift */,
+				1F6EA4772CB2F91B5C18DED4 /* AppLanguage.swift */,
+				4FEB4B7B0E1EEC306EE994DF /* AppTheme.swift */,
+				E2D1FA4FB70AA5049DD24FA3 /* InfoPlist.strings */,
+			);
+			name = WordCover;
+			sourceTree = "<group>";
+		};
+		EEFE21A1443933CA4DE017DA /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9C22AA411EBDFE3F2B85BAFB /* WordCoverTests.swift */,
+				50881A9405182241F3E40458 /* WordCoverUITests.swift */,
+				767BBC27D971207147FF7634 /* Fixtures */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		EF52AAE8213261D9019E2BC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E961903A04515F313F1B869E /* Pods-WordCover.debug.xcconfig */,
+				691E2A99D4468FC0EB0E7A49 /* Pods-WordCover.release.xcconfig */,
+				60FC67FA44F338F47AB60D53 /* Pods-WordCoverTests.debug.xcconfig */,
+				DB269708480E4D167497F5F8 /* Pods-WordCoverTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29C7B681C8D62CBAC94D51C0 /* WordCover */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ADE71700E9404B10E13B577 /* Build configuration list for PBXNativeTarget "WordCover" */;
+			buildPhases = (
+				1396C95FC078B5C826754D6A /* [CP] Check Pods Manifest.lock */,
+				1CDF2F71A52B082132B04DFF /* Sources */,
+				CF5BDB0BEAFE176F9629192A /* Frameworks */,
+				C02F1309AF4906C92F1EAD44 /* Resources */,
+				DBF0B195CDDC6469EF9CC67D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C241B45C66CCC056C4B36E1 /* PBXTargetDependency */,
+			);
+			name = WordCover;
+			packageProductDependencies = (
+				150E32A9B1587E45D75F3E2D /* OpenCV */,
+			);
+			productName = WordCover;
+			productReference = 9D107A8E6B8703D2B43D8307 /* WordCover.app */;
+			productType = "com.apple.product-type.application";
+		};
+		780F1F9FB034FDD6EB57802B /* WordCoverUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 723C226B328F821347EBA7CD /* Build configuration list for PBXNativeTarget "WordCoverUITests" */;
+			buildPhases = (
+				D742D300481CCF42F2B4B0D2 /* Sources */,
+				4D3528B6F4378F7D315D151E /* Frameworks */,
+				96EDD206370F6B92132EB285 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A50B44CAAF3EE1E975A6D59 /* PBXTargetDependency */,
+			);
+			name = WordCoverUITests;
+			productName = WordCoverUITests;
+			productReference = 26F39A15BC0F8515AD3E41AB /* WordCoverUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A6D2E386C439F0FF630F603B /* WordCoverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BEE00F24C5F2CE626F519F7 /* Build configuration list for PBXNativeTarget "WordCoverTests" */;
+			buildPhases = (
+				F80CF1513BFA9F88AA019B4F /* [CP] Check Pods Manifest.lock */,
+				E6808766B04258D859EDF759 /* Sources */,
+				33081AA06F74F343E6B9C036 /* Frameworks */,
+				F6945995554F7F5B22F62E7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C3F8D72261FEE7E77C19B95 /* PBXTargetDependency */,
+				DC2613243E3879E66187EDEB /* PBXTargetDependency */,
+			);
+			name = WordCoverTests;
+			productName = WordCoverTests;
+			productReference = 17F9DFCA6B7A70E019AA25F2 /* WordCoverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98F54143AB4E86B28C3AFEE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					29C7B681C8D62CBAC94D51C0 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 12D04D787E90C9B967248BFD /* Build configuration list for PBXProject "WordCover" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = ADCF10F76EBF2A74473E9DC4;
+			packageReferences = (
+				882FB0E3D68DE3BD456A8CB0 /* XCRemoteSwiftPackageReference "opencv-spm" */,
+			);
+			productRefGroup = 00C45FD35CB0F9C5F764F070 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 00C45FD35CB0F9C5F764F070 /* Products */;
+					ProjectRef = 752D07FAB5C1E51A21CCF4F8 /* Pods.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				29C7B681C8D62CBAC94D51C0 /* WordCover */,
+				A6D2E386C439F0FF630F603B /* WordCoverTests */,
+				780F1F9FB034FDD6EB57802B /* WordCoverUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2893109C52A90D38A03A082E /* onnxruntime_objc.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = onnxruntime_objc.framework;
+			remoteRef = 34E10273E28E709D0859AFF6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5093CE704F35E7E75F523E55 /* Pods_WordCoverTests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_WordCoverTests.framework;
+			remoteRef = 1857D669A1D48FA4AAC5D7C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		613438B1D667435DF380E7AF /* Pods_WordCover.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_WordCover.framework;
+			remoteRef = 1C42E21D1015C2F9C15A0F4F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EC77568F38F6DF0DDB26AB47 /* Yams.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Yams.framework;
+			remoteRef = 66226DB8D6E31796C05FD941 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96EDD206370F6B92132EB285 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C02F1309AF4906C92F1EAD44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				720F57C249A3DC6EA61B3210 /* Models in Resources */,
+				0EEE82D209DA849AF3F5F947 /* Licenses in Resources */,
+				4F950A9363383551C4CE1083 /* InfoPlist.strings in Resources */,
+				D64C5A381B1A22374CC0273C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6945995554F7F5B22F62E7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1E75B2B0D1E32F3ACDE55B7 /* Fixtures in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1396C95FC078B5C826754D6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordCover-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBF0B195CDDC6469EF9CC67D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WordCover/Pods-WordCover-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WordCover/Pods-WordCover-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WordCover/Pods-WordCover-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F80CF1513BFA9F88AA019B4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordCoverTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CDF2F71A52B082132B04DFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				064ACAC87C87C81C0AFABCD6 /* OCRService.swift in Sources */,
+				0E35920846D17E47C6F81087 /* BoxSorter.swift in Sources */,
+				581441920B449DD38392C35C /* CTCDecoder.swift in Sources */,
+				0A6F27AC9DC6B71FFE9B8D96 /* DBPostProcess.swift in Sources */,
+				16B5614FFDE9F937FC8562F2 /* DetectionEngine.swift in Sources */,
+				BEE0F0B02DF3B38A603174AD /* EncodedImageCodec.swift in Sources */,
+				161F76B26F96C87CDD2517F8 /* InferenceConfig.swift in Sources */,
+				85BD75283D4FFC8A98F5A956 /* ModelConfig.swift in Sources */,
+				476515B17855F6E609166AFC /* OCREngine.swift in Sources */,
+				B1AE489059A7183107A9C7D6 /* OCRParameterResolver.swift in Sources */,
+				56BC80ED93998D6E781477A2 /* ORTProfilingBridge.mm in Sources */,
+				3A31AB00D524AE3AC6649FC2 /* ORTSessionManager.swift in Sources */,
+				9987B9FB0345FBD98431E82E /* OpenCVDBBridge.mm in Sources */,
+				121CA2770610511627C9BA49 /* OpenCVImageBridge.mm in Sources */,
+				CF631FC10F15DA31ADE0DBE7 /* PDBPolygonOffsetBridge.mm in Sources */,
+				67E78FAEA037411507E7BD4A /* Preprocessing.swift in Sources */,
+				6594602794893F7E32EB472A /* QuadTextCrop.swift in Sources */,
+				8AEBCF4BCB5DA0ED42DD04EC /* RecPreprocessor.swift in Sources */,
+				81FEBBEB68E8FAA377A5F496 /* RecognitionEngine.swift in Sources */,
+				793055FD506397E3215312F1 /* clipper.cpp in Sources */,
+				595C539D7EF9FEB8D5699E0A /* CameraPicker.swift in Sources */,
+				362427BE3A7558EDA41B46BC /* EditorView.swift in Sources */,
+				C04A80DD7CCC3F82E0CC3A2D /* HomeView.swift in Sources */,
+				23C295440BB6C924B03EABF9 /* MaskCanvas.swift in Sources */,
+				1AB6472CE23D1D7F40C14B99 /* MaskHitArea.swift in Sources */,
+				D4D7CF36B66B427B0B2EB318 /* Models.swift in Sources */,
+				009081D38DE2C1AAEF4C6953 /* StudyView.swift in Sources */,
+				281BE5E010096A72500D9027 /* TextSegmentation.swift in Sources */,
+				7520CFFA335C9C5BC0D1C008 /* WordCoverApp.swift in Sources */,
+				88E548E589CA47D9D6E41B1D /* WordGapLocator.swift in Sources */,
+				D9409B8E519B5AFE0AC8351D /* FileImport.swift in Sources */,
+				7A93426C29A9B6D87844A3E9 /* PDFPagePicker.swift in Sources */,
+				E4A9DB569DD2F49CF30A07BB /* AppLanguage.swift in Sources */,
+				4BFCEE34878FEAA3A66D7EC8 /* AppTheme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D742D300481CCF42F2B4B0D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB0137395A4F9CC6202A74D /* WordCoverUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6808766B04258D859EDF759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55DBC330C3CA8CB600971E38 /* WordCoverTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C241B45C66CCC056C4B36E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-WordCover";
+			targetProxy = C3B57E6A80EA2490CAF63FA0 /* PBXContainerItemProxy */;
+		};
+		3A50B44CAAF3EE1E975A6D59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29C7B681C8D62CBAC94D51C0 /* WordCover */;
+			targetProxy = 4517297F88778A2FF907FACA /* PBXContainerItemProxy */;
+		};
+		9C3F8D72261FEE7E77C19B95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29C7B681C8D62CBAC94D51C0 /* WordCover */;
+			targetProxy = 5D93A1BCC9D505296C299A96 /* PBXContainerItemProxy */;
+		};
+		DC2613243E3879E66187EDEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-WordCoverTests";
+			targetProxy = 17A6010BAC6406EDAAA10F1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E2D1FA4FB70AA5049DD24FA3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D6270F5129158085094CE5C /* en */,
+				887D0879B523152FB9BB7DB9 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04AA0B0EBA179D00B8C29FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.WordCoverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WordCover;
+			};
+			name = Debug;
+		};
+		1E0DDAF384B911BF23BC77ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E961903A04515F313F1B869E /* Pods-WordCover.debug.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/OCR/PaddleOCR/Engine",
+					"$(SRCROOT)/OCR/PaddleOCR/ThirdParty/Clipper1",
+					"$(PODS_ROOT)/onnxruntime-objc/objectivec",
+					"$(PODS_ROOT)/onnxruntime-objc/objectivec/include",
+				);
+				INFOPLIST_KEY_CFBundleDisplayName = "挡住单词";
+				INFOPLIST_KEY_NSCameraUsageDescription = "拍摄要制作成学习卡片的图片。";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-Wl,-no_warn_duplicate_libraries",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.WordCover;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_OBJC_BRIDGING_HEADER = "OCR/OCR-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BACB001B2BDD456E650A684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.WordCoverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WordCover;
+			};
+			name = Release;
+		};
+		877A6BA951A2EA0025A2ABE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_TESTABILITY = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8937EDF2F835366DEEBD31F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60FC67FA44F338F47AB60D53 /* Pods-WordCoverTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.WordCoverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordCover.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WordCover";
+			};
+			name = Debug;
+		};
+		959134B361DD7E21ADEA3164 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_TESTABILITY = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A1EFC270D4D6011185E1BD4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 691E2A99D4468FC0EB0E7A49 /* Pods-WordCover.release.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/OCR/PaddleOCR/Engine",
+					"$(SRCROOT)/OCR/PaddleOCR/ThirdParty/Clipper1",
+					"$(PODS_ROOT)/onnxruntime-objc/objectivec",
+					"$(PODS_ROOT)/onnxruntime-objc/objectivec/include",
+				);
+				INFOPLIST_KEY_CFBundleDisplayName = "挡住单词";
+				INFOPLIST_KEY_NSCameraUsageDescription = "拍摄要制作成学习卡片的图片。";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-Wl,-no_warn_duplicate_libraries",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.WordCover;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_OBJC_BRIDGING_HEADER = "OCR/OCR-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC88E0EF612AFC265F90DE86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB269708480E4D167497F5F8 /* Pods-WordCoverTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.WordCoverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordCover.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WordCover";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12D04D787E90C9B967248BFD /* Build configuration list for PBXProject "WordCover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				877A6BA951A2EA0025A2ABE8 /* Debug */,
+				959134B361DD7E21ADEA3164 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BEE00F24C5F2CE626F519F7 /* Build configuration list for PBXNativeTarget "WordCoverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8937EDF2F835366DEEBD31F9 /* Debug */,
+				FC88E0EF612AFC265F90DE86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		723C226B328F821347EBA7CD /* Build configuration list for PBXNativeTarget "WordCoverUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04AA0B0EBA179D00B8C29FD8 /* Debug */,
+				3BACB001B2BDD456E650A684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ADE71700E9404B10E13B577 /* Build configuration list for PBXNativeTarget "WordCover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E0DDAF384B911BF23BC77ED /* Debug */,
+				A1EFC270D4D6011185E1BD4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		882FB0E3D68DE3BD456A8CB0 /* XCRemoteSwiftPackageReference "opencv-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yeatse/opencv-spm.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		150E32A9B1587E45D75F3E2D /* OpenCV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 882FB0E3D68DE3BD456A8CB0 /* XCRemoteSwiftPackageReference "opencv-spm" */;
+			productName = OpenCV;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+}
